@@ -2,7 +2,7 @@
 
 Check out our [Large Driving Model](https://github.com/wzzheng/LDM/) Series!
 
-### [Paper]() | [Project Page](https://wzzheng.net/Driv3R)
+### [Paper](https://arxiv.org/abs/2412.06777) | [Project Page](https://wzzheng.net/Driv3R)
 
 > [Xin Fei](https://github.com/Barrybarry-Smith)*, [Wenzhao Zheng](https://wzzheng.net/)$\dagger$, [Yueqi Duan](https://duanyueqi.github.io/), [Wei Zhan](https://zhanwei.site/), [Masayoshi Tomizuka](https://me.berkeley.edu/people/masayoshi-tomizuka/), [Kurt Keutzer](https://people.eecs.berkeley.edu/~keutzer/), [Jiwen Lu](http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/)
 
@@ -89,5 +89,12 @@ sh script/eval.sh
 
 If you find this project helpful, please consider citing the following paper:
 ```
-
+@misc{fei2024driv3rlearningdense4d,
+  title={Driv3R: Learning Dense 4D Reconstruction for Autonomous Driving}, 
+  author={Xin Fei and Wenzhao Zheng and Yueqi Duan and Wei Zhan and Masayoshi Tomizuka and Kurt Keutzer and Jiwen Lu},
+  year={2024},
+  eprint={2412.06777},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV}
+}
 ```
