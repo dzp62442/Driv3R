@@ -11,7 +11,7 @@ Tsinghua University, UC Berkeley
 \*Work done during an internship at UC Berkeley, $\dagger$ Project leader
 
 ![teaser](./assets/teaser.png)
-For real-time 4D reconstruction in autonomous driving, existing DUSt3R-based methods fall short due to inaccurate modeling of fast-moving dynamic objects and reliance on computationally expensive global alignment processes. In comparison, our Driv3R predicts per-frame pointmaps in the global consistent coordinate system in a optimization-free manner, and can accurately reconstruct fast-moving objects on large-scale scenes with **15x faster inference speed** compared to methods requiring global alignment.
+For real-time 4D reconstruction in autonomous driving, existing DUSt3R-based methods fall short due to inaccurate modeling of fast-moving dynamic objects and reliance on computationally expensive global alignment processes. In comparison, our Driv3R predicts per-frame pointmaps in the global consistent coordinate system in an optimization-free manner. It can accurately reconstruct fast-moving objects on large-scale scenes with **15x faster inference speed** compared to methods requiring global alignment.
 
 ## News
 - **[2024/12/9]** Code release.
@@ -28,7 +28,7 @@ For real-time 4D reconstruction in autonomous driving, existing DUSt3R-based met
 ## Pipeline
 ![pipeline](./assets/pipeline.png)
 
-**Pipeline of Driv3R:** Given multi-view input sequences, we construct a sensor-wise memory pool for temporal and spatial information interactions. After obtaining per-frame pointmaps, 4D Flow Predictor identifies the dynamic objects within the scene. Finally, we adopt a optimization-free multi-view alignment strategy to formulate the 4D global point cloud in the world coordinate system.
+**Pipeline of Driv3R:** Given multi-view input sequences, we construct a sensor-wise memory pool for temporal and spatial information interactions. After obtaining per-frame point maps, the 4D flow predictor identifies the dynamic objects within the scene. Finally, we adopt an optimization-free multi-view alignment strategy to formulate the 4D global point cloud in the world coordinate system.
 
 ## Getting Started
 
@@ -66,9 +66,9 @@ To download all checkpoints required for Driv3R, please run the following comman
 sh script/download.sh
 ```
 
-### Train, Eval and Visualization
+### Train, Eval, and Visualization
 
-1. To train the Driv3R model on NuScenes dataset, please simply run:
+1. To train the Driv3R model on nuScenes dataset, please run:
 ```bash
 sh script/train.sh
 ```
