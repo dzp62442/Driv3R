@@ -89,12 +89,10 @@ sh script/eval.sh
 
 If you find this project helpful, please consider citing the following paper:
 ```
-@misc{fei2024driv3rlearningdense4d,
+@article{driv3r,
   title={Driv3R: Learning Dense 4D Reconstruction for Autonomous Driving}, 
-  author={Xin Fei and Wenzhao Zheng and Yueqi Duan and Wei Zhan and Masayoshi Tomizuka and Kurt Keutzer and Jiwen Lu},
-  year={2024},
-  eprint={2412.06777},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV}
+  author={Fei, Xin and Zheng, Wenzhao and Duan, Yueqi and Zhan, Wei and Tomizuka, Masayoshi and Keutzer, Kurt and Lu, Jiwen},
+  journal={arXiv preprint arXiv:2412.06777},
+  year={2024}
 }
 ```
