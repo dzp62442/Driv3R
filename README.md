@@ -39,7 +39,14 @@ conda activate driv3r
 conda install pytorch torchvision pytorch-cuda=12.1 -c pytorch -c nvidia 
 ```
 Then, install the packages as shown in requirement.txt.
+```bash
+pip install -r requirement.txt
+```
 Also, please compile the external sam2 package in ./third_party/sam2.
+```bash
+cd third_party/sam2
+pip install -e .
+```
 
 ### Data Preparation
 

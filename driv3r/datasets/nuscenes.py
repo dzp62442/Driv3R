@@ -239,12 +239,13 @@ class NuSceneDataset(BaseManyViewDataset):
         for frame_meta in video_frames:
             rgb_image = imread_cv2(frame_meta["img"])
             intrinsics = frame_meta['camera_intrinsics'].astype(np.float32)
-            depthmap = self.get_r3d3_depth_map(
-                meta=frame_meta, 
-                true_image_shape=rgb_image.shape, 
-                resolution=resolution,
-                nus_intri=intrinsics
-            )
+            # depthmap = self.get_r3d3_depth_map(
+            #     meta=frame_meta, 
+            #     true_image_shape=rgb_image.shape, 
+            #     resolution=resolution,
+            #     nus_intri=intrinsics
+            # )
+            depthmap = np.zeros((rgb_image.shape[1], rgb_image.shape[2]), dtype=np.uint8)
             
             # split into two frames, left and right
             if self.dynamic:

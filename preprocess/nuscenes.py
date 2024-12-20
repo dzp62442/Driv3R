@@ -255,7 +255,7 @@ class NuSceneDataset():
 if __name__ == '__main__':
 
     nusc = NuSceneDataset(
-        data_root='../datasets/nuscenes',
+        data_root='./datasets/nuscenes',
         sequence_length=5,
         cams=['CAM_FRONT']
     )

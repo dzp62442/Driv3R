@@ -17,3 +17,4 @@ gdown
 imageio
 pyquaternion
 wandb
+open3d

@@ -31,6 +31,14 @@ def get_args_parser():
 
 @torch.no_grad()
 def main(args):
+    cams=[
+        'CAM_FRONT',
+        'CAM_FRONT_LEFT',
+        'CAM_FRONT_RIGHT',
+        'CAM_BACK',
+        'CAM_BACK_LEFT',
+        'CAM_BACK_RIGHT'
+    ]
 
     per_frame = False
     sequence_length = args.sequence_length
