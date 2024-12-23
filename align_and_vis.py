@@ -8,6 +8,7 @@ import open3d as o3d
 import os.path as osp
 from PIL import Image
 import torchvision
+import setproctitle
 
 from torch.utils.data import DataLoader
 
@@ -40,7 +41,7 @@ def main(args):
         'CAM_BACK_RIGHT'
     ]
 
-    per_frame = False
+    per_frame = True
     sequence_length = args.sequence_length
     save_dir = args.save_path
     scale = args.scale
@@ -209,6 +210,7 @@ def main(args):
                     o3d.io.write_point_cloud(os.path.join(save_dir, f'scene_{str(scene_id)}', f'pcd_frame_{j}.ply'), pcd)
 
 if __name__ == '__main__':
+    setproctitle.setproctitle("dzp")
     parser = get_args_parser()
     args = parser.parse_args()
     main(args)

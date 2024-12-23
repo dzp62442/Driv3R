@@ -10,6 +10,7 @@ import torchvision
 import tqdm, json
 import matplotlib.pyplot as plt
 from torch.utils.data import DataLoader
+import setproctitle
 
 from dust3r.utils.geometry import geotrf
 from dust3r.losses import L21
@@ -248,6 +249,7 @@ def main(args):
     print('delta_1_25_2', delta_1_25_2_all / total_sequences)
         
 if __name__ == '__main__':
+    setproctitle.setproctitle("dzp")
     parser = get_args_parser()
     args = parser.parse_args()
     main(args)
